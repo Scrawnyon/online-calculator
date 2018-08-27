@@ -143,6 +143,28 @@ function numberButton(num) // Called when user presses a number button
     refreshDisplayText();
 }
 
+function backButton()
+{
+    if (currentNum.length <= 0)
+        return;
+        
+    currentNum = currentNum.substring(0, currentNum.length - 1);
+
+    refreshDisplayText();
+}
+
+function decimalButton()
+{
+    if (calculationInProgress == false && storedNum != "")
+        return;
+    
+    if (currentNum == "")
+        currentNum = 0;
+    
+    currentNum += ".";
+    refreshDisplayText();
+}
+
 function equals()
 {
     // Force solve() and refresh the text display

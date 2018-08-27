@@ -2,37 +2,35 @@
     <head>
         <link rel="stylesheet" href="style.css" type="text/css">
         <script src="scripts.js" type="text/javascript"></script>
-
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-        <div id="calculator" class="container-fluid">
+        <div id="calculator">
             <div id="calculatorDisplay"></div>
             <br />
             <div id="calculatorInput">
-                <button class="calculatorButton btn" onclick="clearDisplay()">C</button>
-                <button class="calculatorButton btn">Back</button>
-                <button class="calculatorButton btn" onclick="calculationButton('%')">/</button>
-                <button class="calculatorButton btn" onclick="calculationButton('*')">X</button>
+                <button class="calculatorButton" onclick="clearDisplay()">C</button>
+                <button class="calculatorButton" onClick="backButton()">Back</button>
+                <button class="calculatorButton" onclick="calculationButton('%')">/</button>
+                <button class="calculatorButton" onclick="calculationButton('*')">X</button>
 
-                <button class="calculatorButton btn" onclick="numberButton(1)">1</button>
-                <button class="calculatorButton btn" onclick="numberButton(2)">2</button>
-                <button class="calculatorButton btn" onclick="numberButton(3)">3</button>
-                <button class="calculatorButton btn" onclick="calculationButton('+')">+</button>
+                <button class="calculatorButton" onclick="numberButton(1)">1</button>
+                <button class="calculatorButton" onclick="numberButton(2)">2</button>
+                <button class="calculatorButton" onclick="numberButton(3)">3</button>
+                <button class="calculatorButton" onclick="calculationButton('+')">+</button>
 
-                <button class="calculatorButton btn" onclick="numberButton(4)">4</button>
-                <button class="calculatorButton btn" onclick="numberButton(5)">5</button>
-                <button class="calculatorButton btn" onclick="numberButton(6)">6</button>
-                <button class="calculatorButton btn" onclick="calculationButton('-')">-</button>
+                <button class="calculatorButton" onclick="numberButton(4)">4</button>
+                <button class="calculatorButton" onclick="numberButton(5)">5</button>
+                <button class="calculatorButton" onclick="numberButton(6)">6</button>
+                <button class="calculatorButton" onclick="calculationButton('-')">-</button>
 
-                <button class="calculatorButton btn" onclick="numberButton(7)">7</button>
-                <button class="calculatorButton btn" onclick="numberButton(8)">8</button>
-                <button class="calculatorButton btn" onclick="numberButton(9)">9</button>
-                <button class="calculatorButton btn" onclick="calculationButton('sqrt', true)">Sqrt</button>
+                <button class="calculatorButton" onclick="numberButton(7)">7</button>
+                <button class="calculatorButton" onclick="numberButton(8)">8</button>
+                <button class="calculatorButton" onclick="numberButton(9)">9</button>
+                <button class="calculatorButton" onclick="calculationButton('sqrt', true)">Sqrt</button>
 
-                <button class="calculatorButton btn" onclick="numberButton(0)">0</button>
-                <button class="calculatorButton btn" onClick="equals()">=</button>
+                <button class="calculatorButton" onclick="numberButton(0)">0</button>
+                <button class="calculatorButton" onClick="equals()">=</button>
+                <button class="calculatorButton" onClick="decimalButton()">,</button>
             </div>
         </div>
 
