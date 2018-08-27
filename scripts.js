@@ -26,6 +26,9 @@ function keydownListener(event)
     var keycode = event.keyCode;
     switch(keycode)
     {
+        case 8:
+            backButton();
+            break;
         case 13:
             equals();
             break;
@@ -100,6 +103,18 @@ function keydownListener(event)
             break;
         case 111:
             calculationButton("/");
+            break;
+        case 171:
+            calculationButton("+");
+            break;
+        case 173:
+            calculationButton("-");
+            break;
+        case 188:
+            decimalButton();
+            break;
+        case 190:
+            decimalButton();
             break;
         default:
             break;
