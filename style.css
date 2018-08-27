@@ -1,0 +1,26 @@
+#calculator {
+    margin: auto;
+    border: solid;
+    border-color: black;
+    border-width: 5px;
+    align-content: center;
+    width: 260px;
+    height: 430px;
+    left: 50%;
+}
+
+#calculatorDisplay {
+    width: 100%;
+    height: 60px;
+    border: solid;
+    border-color: black;
+    border-width: 2px;
+}
+
+.calculatorButton {
+    width: 60px;
+    height: 60px;
+    margin-top: 5px;
+    border-width: 1px;
+    border-style: dotted;
+}

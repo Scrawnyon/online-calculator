@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <script src="scripts.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div id="calculator">
+            <div id="calculatorDisplay"></div>
+            <div id="calculatorInput">
+                <button class="calculatorButton" onclick="clear()">C</button>
+                <button class="calculatorButton">Back</button>
+                <button class="calculatorButton">%</button>
+                <button class="calculatorButton">X</button>
+
+                <button class="calculatorButton" onclick="numberButton(1)">1</button>
+                <button class="calculatorButton" onclick="numberButton(2)">2</button>
+                <button class="calculatorButton" onclick="numberButton(3)">3</button>
+                <button class="calculatorButton" onclick="add()">+</button>
+
+                <button class="calculatorButton" onclick="numberButton(4)">4</button>
+                <button class="calculatorButton" onclick="numberButton(5)">5</button>
+                <button class="calculatorButton" onclick="numberButton(6)">6</button>
+                <button class="calculatorButton" onclick="deduct()">-</button>
+
+                <button class="calculatorButton" onclick="numberButton(7)">7</button>
+                <button class="calculatorButton" onclick="numberButton(8)">8</button>
+                <button class="calculatorButton" onclick="numberButton(9)">9</button>
+                <button class="calculatorButton">Sqr</button>
+
+                <button class="calculatorButton">0</button>
+                <button class="calculatorButton wide" onClick="equals()">=</button>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            initialize();
+        </script>
+    </body>
+</html>
